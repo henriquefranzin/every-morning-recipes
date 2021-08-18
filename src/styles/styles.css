@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: url(../assets/fonts/raleway-v19-latin-800.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../assets/fonts/cabin-v18-latin-regular.woff2) format('woff2');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway';
+}
+
+body{
+  background-color: #E1E1CF;
+  font-family: 'Cabin';
+  margin: 0px;
+}
+
+.header {
+  background-image:
+  linear-gradient(rgba(119, 98, 178, 0.6), rgba(119, 98, 178, 0.6)),
+  url(../assets/images/header-cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 8px;
+  color: #FFF;
+  margin: 20px auto;
+  padding: 30px 70px 20px;
+  width: 70%;
+}
+
+.header-title{
+  font-size: 48px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  width: 260px;
+}
+
+.social-media{
+  display: flex;
+  align-items: center;
+}
+
+.social-media-label{
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-right: 8px;
+  text-transform: uppercase;
+}
+
+.social-media-list{
+  list-style: none;
+}
+
+.social-media-item{
+  display: inline-block;
+  width: 28px;
+  margin: 0 8px;
+}
+
+.social-media-link{
+  outline: none;
+  opacity: 1;
+  transition: opacity 150ms ease-in;
+}
+
+.social-media-link:focus, .social-media-link:hover{
+  opacity: 0.6;
+}
