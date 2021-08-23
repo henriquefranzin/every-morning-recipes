@@ -8,7 +8,7 @@
 
 - HTML serve para estruturar a informação em uma página web
 - HTML é composto por tags e elementos
-- atributos fornecem informações de conteúdo e funcionamento das 
+- atributos fornecem informações de conteúdo e funcionamento das
 tags e elementos
 - existem tags/elementos abertos e vazios
 - essencialmente temos duas categorias de elementos: inline e block
@@ -23,7 +23,7 @@ tags e elementos
 - margin serve para dar espaçamento externo em um elemento;
 - é possível aplicar margem negativa com o margin;
 - box-model é uma caixa que envolve todo elemento e consiste de margin, border, padding, height e width;
-- a propriedade `box-sizing: border-box` faz com que o padding e a borda não sejam somados com a largura e altura do elemento; 
+- a propriedade `box-sizing: border-box` faz com que o padding e a borda não sejam somados com a largura e altura do elemento;
 - `*` é o seletor global;
 
 ## Aula 3
@@ -38,7 +38,7 @@ tags e elementos
 - várias propriedades do CSS são passadas de elemento pai para o filho, por exemplo `font-family`;
 - `letter-spacing` aplica espaçamento entre as letras de um texto;
 - utilize `text-transform: uppercase` para deixar tudo em texto maiúsculo;
-- só utilize letras maiúsculas no HTML caso realmente necessário, por exemplo em siglas; 
+- só utilize letras maiúsculas no HTML caso realmente necessário, por exemplo em siglas;
 
 ## Aula 4
 
@@ -59,7 +59,38 @@ tags e elementos
 
 - a unidade de medida `vh` é equivalente ao valor relativo à altura do viewport;
 - `align-items` permite trabalhar com alinhamento dos itens na vertical contando que o `flex-drection` seja `row`;
-- `justify-content` permite trabalhar com alinhamento e disposição da horizontal contando que o `flex-drection` seja `row`; 
+- `justify-content` permite trabalhar com alinhamento e disposição da horizontal contando que o `flex-drection` seja `row`;
 - `align-content` permite o alinhamento dos itens em um container flex com `flex-wrap`;
+- o .editorconfig é um arquivo com configurações para o nosso code editor;
+## Aula 6
 
+- a tag `main` só é permitida ter uma por página HTML;
+- a tag `section` nos permite dividir o conteúdo em seções em um nível mais geral;
+- a tag `article` serve para separar blocos de informações em um nível mais específico;
+- é uma boa prática nomear as imagens (e tudo) com nomes mais descritíveis possível;
+- um component agrupa conteúdo e comportamento que façam sentido estarem juntos;
+- `overflow: hidden` faz com que o conteúdo que ultrapassar as dimensões do elemento seja cortado;
+- utilizamos imagens como `background-images` para imagens que não se remetem ao conteúdo, ou seja, meramente ilustrativas;
+- utilizamos imagens com a tag `img`, imagens que se remetem ao conteúdo;
+- um elemento com `position: absolute` se posiciona relativamente ao elemento;
+- utilizamos as propriedades `top`, `right`, `bottom`, `left` para posicionar um elemento absoluto;
+- a propriedade `z-index` nos permite alterar o nível de profundidade de um elemento, ou seja, alterar o eixo z;
+- só conseguimos alterar o `z-index` se ao menos o nosso elemento tiver o `position` relative ou absolute;
+- `object-fit: cover` tem o mesmo efeito que `background-size: cover`, porém diretamente em um elemento `img`;
 
+## Aula 7
+
+- a funçao `rgba(red, green, blue, alpha)` permite declarar uma cor com transparência;
+- utilize `aria-hidenn="true"` em elementos abertos sem conteúdo para que o leitor de tela não interprete o elemento;
+- ARIA é a API de acessibiliade no HTML;
+- os pseudo-elementos nos permitem aplicar estilo em um conteúdo interno de um elemento, por exemplo: `::first-letter`, `::first-line`, `::selection`, que é o conteúdo selecionado pelo cursos;
+- com os pseudo-elementos `::before` e `::after` conseguimos adicionar um elemento antes ou depois do conteúdo de um elemento;
+- em ambos, devemos declarar a propriedade `content`, e tem por padrão o `display:: inline`;
+
+## Aula 8
+
+- o grid layout provê um modo eficiente de dispor, alinhar e distribuir espaçamento entre linhas e colunas contidas em um elemento com
+`display: grid`;
+- o grid layout é bidirecional, ou seja, conseguimos trabalhar com os dos eixos (x para linhas e y para colunas) ao mesmo tempo;
+- através da função `repeat`, conseguimos repetir dimensões das linhas e colunas;
+- a propriedade `gap` permite declarar a distância entre linhas e colunas;

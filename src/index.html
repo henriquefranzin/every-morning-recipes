@@ -6,40 +6,85 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="./styles/styles.css">
-        
+
         <title>A new recipe every day</title>
     </head>
 
     <body>
-        <header class="header">
+        <header class="header wrapper">
             <h1 class="header-title"> Every morning recipes</h1>
 
             <div class="social-media">
 
-            <p class="social-media-label">Follow us on</p>
+                <p class="social-media-label">Follow us on</p>
 
-            <ul class="social-media-list">
-                <li class="social-media-item">
-                    <a class="social-media-link" href="https://instagram.com" target="_blank">
-                        <img src="./assets/icons/instagram.svg" alt="Instagram-icon">
-                    </a>
-                </li>
+                <ul class="social-media-list">
 
-                <li class="social-media-item">
-                    <a class="social-media-link" href="https://facebook.com" target="_blank">
-                        <img src="./assets/icons/facebook.svg" alt="Facebook-icon">
-                    </a>
-                </li>
-                
-                <li class="social-media-item">
-                    <a class="social-media-link" href="https://youtube.com" target="_blank">
-                        <img src="./assets/icons/youtube.svg" alt="Youtube-icon">
-                    </a>    
-                </li>
+                    <li class="social-media-item">
+                        <a class="social-media-link" href="https://instagram.com" target="_blank">
+                            <img src="./assets/icons/instagram.svg" alt="Instagram-icon">
+                        </a>
+                    </li>
 
-            </ul>
-        </div>
+                    <li class="social-media-item">
+                        <a class="social-media-link" href="https://facebook.com" target="_blank">
+                            <img src="./assets/icons/facebook.svg" alt="Facebook-icon">
+                        </a>
+                    </li>
+
+                    <li class="social-media-item">
+                        <a class="social-media-link" href="https://youtube.com" target="_blank">
+                            <img src="./assets/icons/youtube.svg" alt="Youtube-icon">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
         </header>
-    </body>
+        <main>
+            <section class="wrapper grid">
+                <article class="card-highlight overlay overlay-yellow">
+                    ::before
+                    <img class="card-highlight-image" src="./assets/images/scrambled-eggs-with-toast.jpg" alt="Scrambled eggs with toast">
 
+                    <div class="overlay"></div>
+                    <div class="card-highlight-info">
+                        <h2>
+                            <a class="card-highlight-title" href="/scrambled-eggs-with-toast">
+                                Scrambled eggs with toast
+                            </a>
+                        </h2>
+
+                        <p class="author">
+                            <img class="author-image" src="./assets/images/alex-von-braun.jpg" alt="Alex Von Braun">
+
+                            <em>by <a class="author-link" href="/alex-von-braun">alexvonbraun</a></em>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card-highlight overlay overlay-red">
+                    ::before
+                    <img class="card-highlight-image" src="./assets/images/cereal-lake.jpg" alt="Cereal">
+
+                    <div class="overlay"></div>
+                    <div class="card-highlight-info">
+                        <h2>
+                            <a class="card-highlight-title" href="/cereal">
+                                Cereal
+                            </a>
+                        </h2>
+
+                        <p class="author">
+                            <img class="author-image" src="./assets/images/julia-vivec.jpg" alt="Julia Vivec">
+
+                            <em>by <a class="author-link" href="/julia-vivec">julia-vivec</a></em>
+                        </p>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+    </body>
+</html>
     </html>
