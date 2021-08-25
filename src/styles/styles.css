@@ -27,6 +27,8 @@ h6 {
 
 a {
     outline: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 body{
@@ -144,6 +146,33 @@ body{
     font-size: 36px;
 }
 
+.card{
+    border-radius: 10px;
+    background-color: #FFF;
+    overflow: hidden;
+    color: #000;
+    display: flex;
+}
+
+.card-title{
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.card-image{
+    width: 35%;
+    display: block;
+    object-fit: cover;
+}
+
+.card-info{
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .author{
     display: flex;
     align-items: center;
@@ -169,6 +198,9 @@ body{
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(1fr);
     gap: 20px;
+}
+
+.grid-col-2{
+    grid-template-columns: repeat(2, 1fr);
 }

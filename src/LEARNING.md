@@ -94,3 +94,13 @@ tags e elementos
 - o grid layout é bidirecional, ou seja, conseguimos trabalhar com os dos eixos (x para linhas e y para colunas) ao mesmo tempo;
 - através da função `repeat`, conseguimos repetir dimensões das linhas e colunas;
 - a propriedade `gap` permite declarar a distância entre linhas e colunas;
+- idealmente criamos classes com estilos desacoplados para reutilização de código, exemplo:
+classe `.grid` sabe estilizar um grid, classe `.grid-col-2` diz quantas colunas tem o grid;
+
+## Aula 9
+
+- o valor `inherit` é utilizado para herdar o valor de alguma propriedade de um elemento ancestral que tenha declarado tal propriedade;
+- utilize as pseudo-classes `:hover` e `:focus` preferivelmente em elementos focáveis, ou seja,
+que sejam navegáveis através do teclado: <a>, <button>
+- é possível utilizar features experimentais no CSS utilizando vendo preffix, exemplo `display: -webkit-box`;
+- quando uma feature se torna especificação, o vendor preffix não é mais obrigatório;
