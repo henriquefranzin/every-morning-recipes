@@ -1,40 +1,23 @@
-* {
-  box-sizing: border-box;
+*{
+    box-sizing: border-box;
 }
-
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 800;
-  src: url(../assets/fonts/raleway-v19-latin-800.woff2) format('woff2');
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-style: normal;
+    src: url(../assets/fonts/raleway-v19-latin-800.woff2) format('woff2');
 }
-
 @font-face {
-  font-family: 'Cabin';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../assets/fonts/cabin-v18-latin-regular.woff2) format('woff2');
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Raleway';
-}
-
-a {
-    outline: none;
-    color: inherit;
-    text-decoration: none;
+    font-family: 'Cabin';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../assets/fonts/cabin-v18-latin-regular.woff2) format('woff2');
 }
 
 body{
-  background-color: #E1E1CF;
-  font-family: 'Cabin';
-  margin: 0px;
+    font-family: 'Cabin';
+    background-color: #E1E1CF;
+    margin: 0;
 }
 
 .wrapper{
@@ -43,72 +26,86 @@ body{
     max-width: 1000px;
 }
 
-.header {
-  background-image:
-  linear-gradient(rgba(119, 98, 178, 0.6), rgba(119, 98, 178, 0.6)),
-  url(../assets/images/header-cover.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 8px;
-  color: #FFF;
-  padding: 30px 70px 20px;
-  width: 70%;
+.grid{
+    display: grid;
+    gap: 20px;
 }
 
-.header-title{
-  font-size: 48px;
-  letter-spacing: 1px;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-  width: 260px;
+.grid-col-2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.header{
+    width: 70%;
+    padding: 30px 70px 16px;
+    background:  linear-gradient(rgba(119, 98, 178, 0.6), rgba(119, 98, 178, 0.6)), url(../assets/images/header-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 8px;
+    color: #FFF;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Raleway';
+}
+
+a{
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+
+.header__title{
+    font-size: 48px;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    width: 260px;
 }
 
 .social-media{
-  display: flex;
-  align-items: center;
-}
-
-.social-media-label{
-  font-size: 16px;
-  letter-spacing: 2px;
-  margin-right: 8px;
-  text-transform: uppercase;
-}
-
-.social-media-list{
-  list-style: none;
-}
-
-.social-media-item{
-  display: inline-block;
-  width: 28px;
-  margin: 0 8px;
-}
-
-.social-media-link{
-  outline: none;
-  opacity: 1;
-  transition: opacity 150ms ease-in;
-}
-
-.social-media-link:focus, .social-media-link:hover{
-  opacity: 0.6;
-}
-
-.card-highlight{
-    color: #FFF;
     display: flex;
-    height: 40vh;
-    overflow: hidden;
+    align-items: center;
+}
+
+.social-media__label{
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
+.social-media__list{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+.social-media__item{
+    width: 28px;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.social-media__link{
+    outline: none;
+    opacity: 1;
+    transition: opacity 150ms ease-in;
+}
+
+.social-media__link:focus, .social-media__link:hover{
+    opacity: 0.7;
+}
+
+.overlay{
     position: relative;
-    border-radius: 8px;
-    padding: 16px 32px;
 }
 
 .overlay::before{
+
     position: absolute;
-    content: '';
+    content: ' ';
     display: block;
     top: 0;
     left: 0;
@@ -117,90 +114,92 @@ body{
     z-index: 1;
 }
 
-.overlay-yellow::before{
-    background-color : rgba(215, 215, 98, 0.60);
+.overlay--yellow::before{
+    background-color: rgba(215, 215, 98, 0.6)
+    /* #d7d762; */
 }
 
-.overlay-red::before{
-    background-color : rgba(185, 82, 59, 0.60);
+.overlay--red::before{
+    background-color: rgba(185, 82, 59, 0.6);
 }
 
-.card-highlight-info{
-    align-self: flex-end;
+.card-highlight{
+    border-radius: 8px;
+    color: #FFF;
+    overflow: hidden;
+    display: flex;
+    height: 40vh;
+    padding: 16px 32px;
     position: relative;
+}
+
+.card{
+    background-color: #FFF;
+    border-radius: 10px;
+    color: #000;
+    overflow: hidden;
+    display: flex;
+}
+.card--vertical{
+    flex-direction: column;
+}
+
+.card--vertical .card__image{
+    width: 100%;
+}
+
+.card__image{
+    width: 35%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-highlight__info{
+    position: relative;
+    align-self: flex-end;
     z-index: 2;
 }
 
-.card-highlight-image{
-    height: 100%;
+.card__info{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+
 }
 
-.card-highlight-title{
+.card-highlight__title{
     color: #FFF;
     text-decoration: none;
     font-size: 36px;
 }
 
-.card{
-    border-radius: 10px;
-    background-color: #FFF;
-    overflow: hidden;
-    color: #000;
-    display: flex;
-}
-
-.card-title{
-    font-size: 24px;
+.card__title{
     margin: 8px 0;
+    font-size: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.card-image{
-    width: 35%;
-    display: block;
-    object-fit: cover;
-}
-
-.card-info{
-    padding: 10px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.card-highlight__image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .author{
     display: flex;
     align-items: center;
-    font-size: 14px;
 }
 
-
-.author-image{
+.author__image{
+    width: 48px;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    margin-right: 10px;
-}
-
-.author-link{
-    color: #FFF;
-    text-decoration: none;
-}
-
-.author-link:focus, .author-link:hover{
-    text-decoration: underline;
-}
-
-.grid {
-    display: grid;
-    gap: 20px;
-}
-
-.grid-col-2{
-    grid-template-columns: repeat(2, 1fr);
+    margin-right: 8px;
 }

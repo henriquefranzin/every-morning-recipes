@@ -89,8 +89,7 @@ tags e elementos
 
 ## Aula 8
 
-- o grid layout provê um modo eficiente de dispor, alinhar e distribuir espaçamento entre linhas e colunas contidas em um elemento com
-`display: grid`;
+- o grid layout provê um modo eficiente de dispor, alinhar e distribuir espaçamento entre linhas e colunas contidas em um elemento com `display: grid`;
 - o grid layout é bidirecional, ou seja, conseguimos trabalhar com os dos eixos (x para linhas e y para colunas) ao mesmo tempo;
 - através da função `repeat`, conseguimos repetir dimensões das linhas e colunas;
 - a propriedade `gap` permite declarar a distância entre linhas e colunas;
@@ -101,6 +100,22 @@ classe `.grid` sabe estilizar um grid, classe `.grid-col-2` diz quantas colunas 
 
 - o valor `inherit` é utilizado para herdar o valor de alguma propriedade de um elemento ancestral que tenha declarado tal propriedade;
 - utilize as pseudo-classes `:hover` e `:focus` preferivelmente em elementos focáveis, ou seja,
-que sejam navegáveis através do teclado: <a>, <button>
+que sejam navegáveis através do teclado: <a>, <button>;
 - é possível utilizar features experimentais no CSS utilizando vendo preffix, exemplo `display: -webkit-box`;
 - quando uma feature se torna especificação, o vendor preffix não é mais obrigatório;
+
+## Aula 10
+
+- o BEM é uma metodologia que estabelece uma convenção de nomes para classes CSS;
+- a sigla vem de : block, element e modifier;
+- block é o elemento pai, que dá significado ao component, por exemplo: `.header`;
+- element é uma parte que compõe um block, por exemplo : `.header__title`;
+- um block pode ser composto por outros blocks;
+- não crie muitos níveis de dependência entre elementos, exemplo : `.social-media__list__item__link`;
+- os estilos de um bloco devem ser autocontidos e não devem depender de estilos de blocos ou elementos externos;
+- um modifier aplica um estilo que modifica alguma propriedade de um bloco ou elemento;
+- o BEM não estabelece uma nomenclatura para modificadores globais, exemplo `.text-center`;
+- o BEM traz como benefício a modularidade, reusabilidade e estruturação dos nossos components;
+- blocos bem escritos são como peças de Lego, que vão se encaixando ecompondo outros blocos e, assim, formam
+o layout;
+- a metodologia BEM fornece ao nosso código CSS uma estrutura sólida que se mantém simples e fácil de entender;
