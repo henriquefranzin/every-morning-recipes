@@ -119,3 +119,15 @@ que sejam navegáveis através do teclado: <a>, <button>;
 - blocos bem escritos são como peças de Lego, que vão se encaixando ecompondo outros blocos e, assim, formam
 o layout;
 - a metodologia BEM fornece ao nosso código CSS uma estrutura sólida que se mantém simples e fácil de entender;
+
+## Aula 12
+
+- npm é o gerenciador de pacotes do Node.js;
+- com o npm podemos instalar dependências no nosso projeto;
+- as dependências podem ser de desenvolvimento ou runtime;
+- as informações e configurações do projeto ficam registrados no `package.json`;
+- conseguimos adicionar comandos na chave `script` do `package.json`;
+- o arquivo .`gitignore` inserimos todos os arquivos e pastas que não serão trackeados;
+- sempre colocar a pastas `node_modules` no `.gitignore`;
+- o comando `npm install` instala as dependências listadas no arquivo `package.json`;
+- é boa prática criar um arquivo `README.md` com informações do projeto e instruções para executá-lo;

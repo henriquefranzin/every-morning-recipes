@@ -14,6 +14,10 @@
     src: url(../assets/fonts/cabin-v18-latin-regular.woff2) format('woff2');
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body{
     font-family: 'Cabin';
     background-color: #E1E1CF;
@@ -21,23 +25,21 @@ body{
 }
 
 .wrapper{
-    margin: 20px auto;
-    width: 70%;
+    margin: 2em auto;
+    width: 90%;
     max-width: 1000px;
 }
 
 .grid{
     display: grid;
-    gap: 20px;
+    gap: 2rem;
 }
 
-.grid-col-2{
-    grid-template-columns: 1fr 1fr;
-}
+
 
 .header{
     width: 70%;
-    padding: 30px 70px 16px;
+    padding: 1rem 3rem 1.6rem;
     background:  linear-gradient(rgba(119, 98, 178, 0.6), rgba(119, 98, 178, 0.6)), url(../assets/images/header-cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,11 +59,11 @@ a{
 }
 
 .header__title{
-    font-size: 48px;
-    letter-spacing: 1.5px;
-    margin-bottom: 4px;
+    font-size: 4.4rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.4rem;
     text-transform: uppercase;
-    width: 260px;
+    width: 26rem;
 }
 
 .social-media{
@@ -70,9 +72,9 @@ a{
 }
 
 .social-media__label{
-    font-size: 16px;
+    font-size: 1.6rem;
     letter-spacing: 2px;
-    margin-right: 8px;
+    margin-right: 0.8rem;
     text-transform: uppercase;
 }
 
@@ -83,8 +85,8 @@ a{
 }
 
 .social-media__item{
-    width: 28px;
-    margin: 0 8px;
+    width: 2.8rem;
+    margin: 0 0.8rem;
     display: inline-block;
 }
 
@@ -128,14 +130,14 @@ a{
     color: #FFF;
     overflow: hidden;
     display: flex;
-    height: 40vh;
-    padding: 16px 32px;
+    height: 25rem;
+    padding: 1.6rem 3.2rem;
     position: relative;
 }
 
 .card{
     background-color: #FFF;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #000;
     overflow: hidden;
     display: flex;
@@ -161,7 +163,7 @@ a{
 }
 
 .card__info{
-    padding: 10px 20px;
+    padding: 1rem 1.6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -172,12 +174,12 @@ a{
 .card-highlight__title{
     color: #FFF;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 3.6rem;
 }
 
 .card__title{
-    margin: 8px 0;
-    font-size: 24px;
+    margin: 0.8rem 0;
+    font-size: 2.4rem;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -199,7 +201,42 @@ a{
 }
 
 .author__image{
-    width: 48px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     margin-right: 8px;
+}
+
+@media screen and (min-width: 769px){
+    html{
+        font-size: 62.5%;
+    }
+
+    .grid-col-2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wrapper{
+        width: 70%;
+    }
+
+    .header{
+        padding: 3rem 7rem 1.6rem;
+    }
+
+    .header__title{
+        font-size: 4.8rem;
+    }
+
+    .card-highlight{
+        height: 30vh;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    .card-highlight{
+        height: 40vh;
+    }
 }
