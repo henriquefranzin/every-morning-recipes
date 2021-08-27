@@ -1,0 +1,30 @@
+{
+  "name": "every-morning-recipes",
+  "version": "1.0.0",
+  "description": "A simples project to learn HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henriquefranzin/every-morning-recipes.git"
+  },
+  "keywords": [
+    "css",
+    "html",
+    "flex-box",
+    "mobile-first",
+    "blog"
+  ],
+  "author": "henrique-franzin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henriquefranzin/every-morning-recipes/issues"
+  },
+  "homepage": "https://github.com/henriquefranzin/every-morning-recipes#readme",
+  "devDependencies": {
+    "http-server": "^13.0.1"
+  }
+}
